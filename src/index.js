@@ -15,8 +15,8 @@ const {
 } = require('./utils.js')
 
 const app = express()
-const expressWs = require('express-ws')(app)
-const port = 3000
+require('express-ws')(app)
+const port = process.env.PORT || 3000
 
 const AUTH_DATA = Object.freeze({
 	login: 'developer',
