@@ -43,6 +43,7 @@ function generateAccountId() {
 function makeAccount(mine = false, preseededId = '') {
 	return {
 		account: preseededId || generateAccountId(),
+		date: new Date().toISOString(),
 		mine,
 		balance: 0,
 		transactions: []
