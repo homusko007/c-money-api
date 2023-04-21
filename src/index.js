@@ -16,11 +16,11 @@ const {
 
 const app = express()
 require('express-ws')(app)
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 const AUTH_DATA = Object.freeze({
-	login: 'developer',
-	password: 'methed',
+	login: "developer",
+	password: "methed",
 	token: 'QXF24GFxcJSnhTSmaxRsKa08'
 })
 
